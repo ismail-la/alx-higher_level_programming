@@ -1,5 +1,5 @@
 #!/usr/bin/python3
 
 for charr in range(97, 123):
-    if chr(charr) is not 'q' and chr(charr) is not 'e':
+    if charr != 101 and charr != 113:
         print("{}".format(chr(charr)), end="")
