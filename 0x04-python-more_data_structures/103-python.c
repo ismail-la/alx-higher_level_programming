@@ -1,6 +1,5 @@
-#include <Python.h>
 #include <stdio.h>
-
+#include <Python.h>
 
 /**
  * print_python_bytes - Prints python bytes information
@@ -52,8 +51,7 @@ void print_python_list(PyObject *p)
 {
 	PyObject *object;
 	long int size, x;
-        PyListObjt *list;
-
+	PyListObjt *list;
 	size = ((PyVarObject *)(p))->ob_size;
 	list = (PyListObject *)p;
 
