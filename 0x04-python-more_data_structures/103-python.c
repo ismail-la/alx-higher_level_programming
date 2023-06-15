@@ -3,14 +3,16 @@
 
 /**
  * print_python_bytes - Prints python bytes information
+ *
  * @p: pointer Python Object
  * Return: nothing
  *
  */
+
 void print_python_bytes(PyObject *p)
 {
-	char *string;
 	long int size, i, limit;
+	char *string;
 
 	printf("[.] bytes object info\n");
 	if (!PyBytes_Check(p))
