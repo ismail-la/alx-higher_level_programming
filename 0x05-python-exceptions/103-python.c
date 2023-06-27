@@ -1,19 +1,19 @@
 #include <Python.h>
-
-void print_python_bytes(PyObject *p);
-void print_python_float(PyObject *p);
-void print_python_list(PyObject *p);
-
+#include <stdio.h>
 
 /**
- * print_python_bytes - Displays fundamental information about Python byte objects.
+ * print_python_bytes - Displays fundamental information
+ * about Python byte objects.
  * @p: a bytes object PyObject
  */
 void print_python_bytes(PyObject *p)
 {
 	Py_ssize_t the_size, x;
+
 	PyBytesObject *the_bytes = (PyBytesObject *)p;
+
 	fflush(stdout);
+
 	printf("[.] bytes object info\n");
 	if (strcmp(p->ob_type->tp_name, "bytes") != 0)
 	{
@@ -41,13 +41,17 @@ void print_python_bytes(PyObject *p)
 
 
 /**
- * print_python_float - Displays fundamental information about Python float objects * @p: a float object PyObject.
+ * print_python_float - Displays fundamental information
+ * about Python float objects * @p: a float object PyObject.
  */
 void print_python_float(PyObject *p)
 {
 	char *buff = NULL;
+
 	PyFloatObject *obj_float = (PyFloatObject *)p;
+
 	fflush(stdout);
+
 	printf("[.] float object info\n");
 	if (strcmp(p->ob_type->tp_name, "float") != 0)
 	{
@@ -67,14 +71,15 @@ void print_python_float(PyObject *p)
  */
 void print_python_list(PyObject *p)
 {
-    const char *type;
+	const char *type;
 	Py_ssize_t the_size, allocation, x;
 	PyListObject *the_list = (PyListObject *)p;
 	PyVarObject *variable = (PyVarObject *)p;
+
 	the_size = variable->ob_size;
+
 	allocation = the_list->allocated;
 	fflush(stdout);
-
 	printf("[*] Python list info\n");
 	if (strcmp(p->ob_type->tp_name, "list") != 0)
 	{
