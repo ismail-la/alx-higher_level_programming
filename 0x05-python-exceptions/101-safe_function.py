@@ -2,10 +2,10 @@
 
 from __future__ import print_function
 import sys
+
 def safe_function(fct, *args):
     """function that executes a function safely.
     """
-
     try:
         Resultat = fct(*args)
     except Exception as e:
