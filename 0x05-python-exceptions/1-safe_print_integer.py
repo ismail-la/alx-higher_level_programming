@@ -1,6 +1,6 @@
-#!/usr/bin/python3
+#!/usr/bin/pythoni3
 def safe_print_integer(value):
-    """Print an integer with "{:d}".format().
+    """Print integer with "{:d}".format().
     """
     try:
         print("{:d}".format(value))
