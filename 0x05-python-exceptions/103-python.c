@@ -46,7 +46,8 @@ void print_python_bytes(PyObject *p)
 
 /**
  * print_python_float - Displays fundamental information
- * about Python float objects * @p: a float object PyObject.
+ * about Python float objects 
+ * @p: a float object PyObject.
  */
 void print_python_float(PyObject *p)
 {
