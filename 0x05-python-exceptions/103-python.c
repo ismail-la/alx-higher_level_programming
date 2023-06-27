@@ -6,12 +6,12 @@ void print_python_bytes(PyObject *p);
 
 /**
  * print_python_float - Displays fundamental information
- * about Python float objects 
+ * about Python float objects
  * @p: a float object PyObject.
  */
 void print_python_float(PyObject *p)
 {
-    char *str = NULL;
+	char *str = NULL;
 	double VAL = 0;
 
 	fflush(stdout);
@@ -34,7 +34,7 @@ void print_python_float(PyObject *p)
 void print_python_bytes(PyObject *p)
 {
 	char *str = NULL;
-    Py_ssize_t Sizee = 0, i = 0;
+	Py_ssize_t Sizee = 0, i = 0;
 
 	fflush(stdout);
 	printf("[.] bytes object info\n");
@@ -62,7 +62,7 @@ void print_python_bytes(PyObject *p)
 void print_python_list(PyObject *p)
 {
 	PyObject *Elemm;
-    Py_ssize_t Sizee = 0;
+	Py_ssize_t Sizee = 0;
 	int i = 0;
 
 	fflush(stdout);
