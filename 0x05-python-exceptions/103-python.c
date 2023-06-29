@@ -1,10 +1,10 @@
-#!/usr/bin/python3
-#include <Python.h>
+
 
 /*
- * File: file103-python.c
+ * File: 103-python.c
  * Auth: Lahbari ismail
  */
+#include <Python.h>
 
 void print_python_list(PyObject *p);
 void print_python_bytes(PyObject *p);
@@ -39,7 +39,7 @@ void print_python_list(PyObject *p)
 	printf("[*] Size of the Python List = %ld\n", size);
 	printf("[*] Allocated = %ld\n", alloc);
 
-	for (x < size)
+	while (x < size)
 	{
 		type = list->ob_item[x]->ob_type->tp_name;
 		printf("Element %ld: %s\n", x, type);
@@ -82,7 +82,7 @@ void print_python_bytes(PyObject *p)
 
 	printf("  first %ld bytes: ", size);
 
-	for (b < size)
+	while (b < size)
 	{
 		printf("%02hhx", bytes->ob_sval[b]);
 		if (b == (size - 1))
