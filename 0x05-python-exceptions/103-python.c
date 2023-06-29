@@ -56,10 +56,8 @@ void print_python_list(PyObject *p)
  * @p: PyObject byte object
  *
  */
-void print_python_bytes(PyObject *p)
+void print_python_bytes(PyObject *p, PyBytesObject *bytes)
 {
-
-	PyBytesObject *bytes;
 	bytes = (PyBytesObject *)p;
 	Py_ssize_t size, i = 0;
 
