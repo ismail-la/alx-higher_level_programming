@@ -1,6 +1,5 @@
-#!/usr/bin/python3
+#!/usr/bin/python2
 """Represent a class Square"""
-
 
 
 class Square:
