@@ -4,17 +4,17 @@ Define a class Square.
 """
 
 
-
 class Square:
     """Represent a class square"""
+
     def __init__(self, size):
-        """Initialization new square.
-        """
+        """Initialization new square."""
         self.size = size
 
     @property
     def size(self):
         """Get and set or retrieve the size of the square."""
+
         return (self.__size)
 
     @size.setter
@@ -31,7 +31,7 @@ class Square:
 
     def my_print(self):
         """Print square with #"""
-        
+
         for i in range(0, self.__size):
             [print("#", end="") for j in range(self.__size)]
             print("")
