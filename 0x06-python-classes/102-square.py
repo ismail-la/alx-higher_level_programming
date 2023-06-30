@@ -60,4 +60,3 @@ class Square:
         """Compare operator >= - Define the >= compmarison to a Square."""
 
         return self.area() >= other.area()
-

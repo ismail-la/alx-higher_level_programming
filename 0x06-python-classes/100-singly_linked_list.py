@@ -7,7 +7,6 @@ module contains a class that defines a square.
 class Node:
     """a node in a singly-linked list"""
 
-
     def __init__(self, data, next_node=None):
         """Initialize a new Node class."""
 
