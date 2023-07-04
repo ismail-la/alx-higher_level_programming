@@ -12,7 +12,6 @@ class Rectangle:
     print_symbol = "#"
     number_of_instances = 0
 
-
     def __init__(self, width=0, height=0):
         """Initialization of a new Rectangle.
         the Args:
@@ -21,7 +20,7 @@ class Rectangle:
         """
 
         type(self).number_of_instances += 1
-    
+
         self.height = height
         self.width = width
 
@@ -91,10 +90,10 @@ class Rectangle:
 
         Resctangle = []
         for i in range(self.__height):
-            [Resctangle.append(str(self.print_symbol)) for j in range(self.__width)]
+            [Rect.append(str(self.print_symbol)) for j in range(self.__width)]
             if i != self.__height - 1:
-                Resctangle.append("\n")
-        return ("".join(Resctangle))
+                Rect.append("\n")
+        return ("".join(Rect))
 
     def __repr__(self):
         """Return string representation of Rectangle"""
