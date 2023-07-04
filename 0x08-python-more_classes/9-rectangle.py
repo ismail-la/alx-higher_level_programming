@@ -69,12 +69,12 @@ class Rectangle:
 
         if self.__width == 0 or self.__height == 0:
             return ""
-        rect = []
+        rectangle = []
         for x in range(self.__height):
-            rect.append(str(self.print_symbol) * self.__width)
+            rectangle.append(str(self.print_symbol) * self.__width)
             if x != self.__height - 1:
-                rect.append("\n")
-        return "".join(rect)
+                rectangle.append("\n")
+        return "".join(rectangle)
 
     def __repr__(self):
         """Return string representation of Rectangle"""
@@ -107,7 +107,7 @@ class Rectangle:
             return rect_2
 
     @classmethod
-    def square(cls, size=0):
+    def square(Rectangle, size=0):
 
         """Return a new Rectangle instance with width == height == size
         the Args:
@@ -115,4 +115,4 @@ class Rectangle:
         Returns:
             Rectangle: new Rectangle instance representing a square
         """
-        return cls(size, size)
+        return Rectangle(size, size)
