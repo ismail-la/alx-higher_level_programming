@@ -41,8 +41,6 @@ def nbr_out(board, row, col):
         row (int): row where a queen was last played
         col (int): column where a queen was last played
     """
-
-
     # nbr out all forward spots
     for b in range(col + 1, len(board)):
         board[row][b] = "x"
@@ -85,7 +83,6 @@ def nbr_out(board, row, col):
         b -= 1
 
 
-
 def Solve_recursive(board, row, Queens_placed, solutions):
     """Recursively solve N-queens puzzle
 
@@ -97,7 +94,6 @@ def Solve_recursive(board, row, Queens_placed, solutions):
     Returns:
         solutions
     """
-
 
     if Queens_placed == len(board):
         solutions.append(Gets_solution(board))
@@ -124,7 +120,6 @@ if __name__ == "__main__":
     if int(sys.argv[1]) < 4:
         print("N must be at least 4")
         sys.exit(1)
-
 
     the_board = Board_init(int(sys.argv[1]))
     solutions = Solve_recursive(the_board, 0, 0, [])
