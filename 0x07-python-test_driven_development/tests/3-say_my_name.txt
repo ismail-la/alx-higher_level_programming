@@ -38,7 +38,7 @@ a TypeError is raised.
 
 :::::
 
-    >>> ssay_my_name(12, "White"
+    >>> ssay_my_name(6, "James"
     Traceback (most recent call last):
     TypeError: first_name must be a string
 
