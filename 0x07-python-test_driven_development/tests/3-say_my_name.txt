@@ -26,8 +26,8 @@ an empty string is printed instead.
 
 :::::
 
-    >>> say_my_name("Bob")
-    My name is Bob
+    >>> say_my_name("John")
+    My name is John
 
 =============
 Invalid Names
@@ -50,7 +50,7 @@ a TypeError is raised.
 
 ::::
 
-    >>> say_my_name({"LeBron": 6, "Lames": 23}, 7.7)
+    >>> say_my_name({"LeBron": 6, "James": 23}, 7.7)
     Traceback (most recent call last):
     TypeError: first_name must be a string
 
