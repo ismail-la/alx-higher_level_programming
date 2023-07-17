@@ -395,7 +395,7 @@ class TestBase_save_to_file_csv(unittest.TestCase):
     """Unittests for testing save_to_file_csv method of Base class"""
     @classmethod
     def tearDown(self):
-        """Delete any created files."""
+        """Delete any created files"""
         try:
             os.remove("Rectangle.csv")
         except IOError:
