@@ -1,4 +1,4 @@
- #!/usr/bin/python3
+#!/usr/bin/python3
 """This module contains a base model class"""
 
 import turtle
@@ -23,7 +23,7 @@ class Base:
     @staticmethod
     def to_json_string(list_dictionaries):
         """returns the JSON string representation of list_dictionaries.
-        list_dictionaries : a liste of dictionaries.
+        list_dictionaries: a liste of dictionaries.
         """
         if list_dictionaries is None or list_dictionaries == []:
             return "[]"
@@ -53,6 +53,7 @@ class Base:
             JSON_STRING_list = json.loads(json_string)
 
         return JSON_STRING_list
+
     @classmethod
     def create(cls, **dictionary):
         """Returns an instance with all attributes already set.
@@ -65,6 +66,7 @@ class Base:
 
         New_dommy.update(**dictionary)
         return New_dommy
+
     @classmethod
     def load_from_file(cls):
         """Returns a list of instances or
@@ -80,6 +82,7 @@ class Base:
                 for dictionary in list_dictionaries:
                     List_intances.append(cls.create(**dictionary))
         return List_intances
+
     @classmethod
     def save_to_file_csv(cls, list_objs):
         """Create a file by serializing a list of objects in CSV format.
@@ -98,6 +101,7 @@ class Base:
                 writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
                 for obj in list_objs:
                     writer.writerow(obj.to_dictionary())
+
     @classmethod
     def load_from_file_csv(cls):
         """Files are deserialized into CSV format"""

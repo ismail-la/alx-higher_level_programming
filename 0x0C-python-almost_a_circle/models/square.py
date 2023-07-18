@@ -65,10 +65,10 @@ class Square(Rectangle):
         """Returns the Squaredictionary representation"""
 
         Dict_obj = {'id': self.id, 'size': self.size, 'x': self.x,
-                          'y': self.y}
+                    'y': self.y}
 
         return Dict_obj
-    
+
     def __str__(self):
         """Defines a format for the class string representation"""
         return f"[Square] ({self.id}) {self.x}/{self.y} - {self.size}"

@@ -24,7 +24,7 @@ class Rectangle(Base):
     def y(self):
         """sets the y value"""
         return self.__y
-    
+
     @property
     def width(self):
         """sets the width value"""
@@ -129,8 +129,8 @@ class Rectangle(Base):
     def to_dictionary(self):
         """Returns the Rectangle dictionary representation."""
         Dict_obj = {'id': self.id, 'width': self.__width,
-                          'height': self.__height, 'x': self.__x,
-                          'y': self.__y}
+                    'height': self.__height, 'x': self.__x,
+                    'y': self.__y}
         return Dict_obj
 
     def __str__(self):
