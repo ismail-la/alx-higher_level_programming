@@ -6,7 +6,7 @@
  *    The constructor of Rectangle must be called (by using super())
  */
 
- const Rectangle = require('./4-rectangle');
+const Rectangle = require('./4-rectangle');
 
 class Square extends Rectangle {
   constructor (size) {
