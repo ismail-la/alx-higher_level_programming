@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This script prints the first State object from the database hbtn_0e_6_usa"""
+"""Script that prints the first State object from the database hbtn_0e_6_usa"""
 
 from sys import argv
 from model_state import State, Base
