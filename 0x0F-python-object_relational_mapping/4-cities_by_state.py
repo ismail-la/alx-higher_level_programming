@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This script lists all cities from the database hbtn_0e_4_usa"""
+"""Script that lists all cities from the database hbtn_0e_4_usa"""
 
 import MySQLdb as db
 from sys import argv
