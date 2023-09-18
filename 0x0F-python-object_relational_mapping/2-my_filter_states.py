@@ -10,7 +10,7 @@ if __name__ == '__main__':
     """Access to the database and get the states from the database """
     connect_db = db.connect(host="localhost", port=3306,
                             user=argv[1], passwd=argv[2], db=argv[3])
-    cursor_db = connect-db.cursor()
+    cursor_db = connect_db.cursor()
     cursor_db.execute(
         "SELECT * FROM states WHERE name LIKE BINARY '{}' ORDER BY \
                         states.id ASC".format(argv[4]))
