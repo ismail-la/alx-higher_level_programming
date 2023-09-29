@@ -1,3 +1,3 @@
 #!/bin/bash
-# Bash script that takes in a URL, sends a GET request to the URL, and displays the body of 200 status response
+# Bash script that sends a DELETE request to the URL passed as the first argument and displays the body of the response (using curl)
 curl -sX DELETE "$1"
