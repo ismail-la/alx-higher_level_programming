@@ -16,12 +16,11 @@ def find_peak(list_of_integers):
 
     while True:
         mid = mid // 2
-        if (mid < Length - 1 and
+        if (m < Length - 1 and
                 list_of_integers[m] < list_of_integers[m + 1]):
             if mid // 2 == 0:
                 mid = 2
             m = m + mid // 2
-
         elif mid > 0 and list_of_integers[m] < list_of_integers[m - 1]:
             if mid // 2 == 0:
                 mid = 2
