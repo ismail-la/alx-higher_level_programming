@@ -9,14 +9,14 @@ def find_peak(list_of_integers):
     """
 
     Length = len(list_of_integers)
-    mid = size
-    m = size // 2
-    if size == 0:
+    mid = Length
+    m = Length // 2
+    if Length == 0:
         return None
 
     while True:
         mid = mid // 2
-        if (mid < size - 1 and
+        if (mid < Length - 1 and
                 list_of_integers[m] < list_of_integers[m + 1]):
             if mid // 2 == 0:
                 mid = 2
