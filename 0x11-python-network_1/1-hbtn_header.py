@@ -8,7 +8,7 @@ import urllib.request
 
 
 if __name__ == "__main__":
-	# Get first command argument.
+    # Get first command argument.
     url = sys.argv[1]
 
     request = urllib.request.Request(url)
