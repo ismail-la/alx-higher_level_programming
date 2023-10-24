@@ -12,7 +12,7 @@ const fs = require('fs');
 const file_name = process.argv[2];
 
 // Read file
-fs.readFile(filePath, 'utf-8', function (error, content) {
+fs.readFile(file_name, 'utf-8', function (error, content) {
   if (error) {
     console.log(error);
   } else {
