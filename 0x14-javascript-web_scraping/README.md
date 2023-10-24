@@ -1,2 +1,1 @@
-0x14. JavaScript - Web scraping
-edfdsqfd
+0x14. JavaScript - Web scrapingd
