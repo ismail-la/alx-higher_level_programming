@@ -2,9 +2,8 @@
 // Script that prints the number of movies
 const request = require('request');
 const url = process.argv[2];
-const charId = '18';
+const characterId = '18';
 let Count = 0;
-
 request.get(url, (error, response, body) => {
   if (error) {
     console.log(error);
@@ -12,7 +11,7 @@ request.get(url, (error, response, body) => {
     const data = JSON.parse(body);
     data.results.forEach((film) => {
       film.characters.forEach((character) => {
-        if (character.includes(charId)) {
+        if (character.includes(characterId)) {
           count += 1;
         }
       });
