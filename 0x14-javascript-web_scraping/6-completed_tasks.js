@@ -1,10 +1,6 @@
 #!/usr/bin/node
-/* script that computes the number of tasks completed by user id.*/
 
-// Import modules
 const request = require('request');
-
-// Get command arguments
 const url = process.argv[2];
 
 request.get(url, { json: true }, (error, response, body) => {
