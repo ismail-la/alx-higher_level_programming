@@ -4,6 +4,7 @@ const request = require('request');
 const url = process.argv[2];
 const charId = '18';
 let Count = 0;
+
 request.get(url, (error, response, body) => {
   if (error) {
     console.log(error);
