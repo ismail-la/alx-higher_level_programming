@@ -1,11 +1,9 @@
 #!/usr/bin/node
-/* Script that prints the number of movies where the character
- */
-
+// Script that prints the number of movies
 const request = require('request');
 const url = process.argv[2];
 const characterId = '18';
-let Character_count = 0;
+let count = 0;
 
 request.get(url, (error, response, body) => {
   if (error) {
@@ -15,10 +13,10 @@ request.get(url, (error, response, body) => {
     data.results.forEach((film) => {
       film.characters.forEach((character) => {
         if (character.includes(characterId)) {
-          Character_count += 1;
+          count += 1;
         }
       });
     });
-    console.log(Character_count);
+    console.log(count);
   }
 });
