@@ -17,7 +17,7 @@ request.get(url, { json: true }, (error, response, body) => {
   body.forEach((todo) => {
     if (todo.completed) {
       if (!tasksCompleted[todo.userId]) {
-        User_tasksCompleted[todo.userId] = 1;
+        tasksCompleted[todo.userId] = 1;
       } else {
         tasksCompleted[todo.userId] += 1;
       }
