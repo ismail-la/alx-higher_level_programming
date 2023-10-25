@@ -1,7 +1,7 @@
 #!/usr/bin/node
 /* Script that prints the number of movies where the character
-Wedge Antilles is present.
-   see README.md
+ *Wedge Antilles is present.
+ *see README.md
 */
 
 const request = require('request');
