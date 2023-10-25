@@ -12,11 +12,11 @@ request.get(url, { json: true }, (error, response, body) => {
   body.forEach((todo) => {
     if (todo.completed) {
       if (!Completedtasks[todo.userId]) {
-        tasksCompleted[todo.userId] = 1;
+        Completedtasks[todo.userId] = 1;
       } else {
-        Completedtasks[todo.userId] += 1;
+        completedtasks[todo.userId] += 1;
       }
     }
   });
-  console.log(Completedtasks);
+  console.log(completedtasks);
 });
