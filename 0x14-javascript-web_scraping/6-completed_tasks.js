@@ -8,15 +8,15 @@ request.get(url, { json: true }, (error, response, body) => {
     console.log(error);
     return;
   }
-  const tasksCompleted = {};
+  const Completedtasks = {};
   body.forEach((todo) => {
     if (todo.completed) {
-      if (!tasksCompleted[todo.userId]) {
+      if (!Completedtasks[todo.userId]) {
         tasksCompleted[todo.userId] = 1;
       } else {
-        tasksCompleted[todo.userId] += 1;
+        Completedtasks[todo.userId] += 1;
       }
     }
   });
-  console.log(tasksCompleted);
+  console.log(Completedtasks);
 });
