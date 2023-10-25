@@ -1,15 +1,9 @@
 #!/usr/bin/node
-/* Script that prints all characters of a Star Wars movie:
--The first argument is the Movie ID - example: 3 = “Return of the Jedi”
--Display one character name by line in the same order of the list “characters
- in the /films/ response
--You must use the Star wars API
--You must use the module request
-*/
+// Script that prints all characters of a Star Wars movie
 
 const request = require('request');
-const movie_Id = process.argv[2];
-const url = `https://swapi.dev/api/films/${movie_Id}/`;
+const DataId = process.argv[2];
+const url = `https://swapi.dev/api/films/${DataId}/`;
 let characters = [];
 request(url, (error, response, body) => {
   if (error) {
