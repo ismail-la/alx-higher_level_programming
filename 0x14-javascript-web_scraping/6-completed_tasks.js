@@ -16,16 +16,16 @@ request.get(url, { json: true }, (error, response, body) => {
     console.log(error);
     return;
   }
-  const UsertasksCompleted = {};
+  const tasksCompleted = {};
 
   body.forEach((todo) => {
     if (todo.completed) {
-      if (!UsertasksCompleted[todo.userId]) {
+      if (!tasksCompleted[todo.userId]) {
         User_tasksCompleted[todo.userId] = 1;
       } else {
-        User_tasksCompleted[todo.userId] += 1;
+        tasksCompleted[todo.userId] += 1;
       }
     }
   });
-  console.log(UsertasksCompleted);
+  console.log(tasksCompleted);
 });
